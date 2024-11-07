@@ -44,7 +44,7 @@
 // abc();
 
 // 2. map, filter, reduce
-const nums = [1, 2, 3, 4];
+// const nums = [1, 2, 3, 4];
 // const multiplyThree = nums.map((num, idx, arr) => {
 //     return num*3;
 // });
@@ -104,12 +104,12 @@ const nums = [1, 2, 3, 4];
 // }, 0);
 // console.log(sum);
 
-let students = [
-  { name: "Piyush", rollNumber: 31, marks: 80 },
-  { name: "Jenny", rollNumber: 15, marks: 69 },
-  { name: "Kaushal", rollNumber: 16, marks: 35 },
-  { name: "Dilpreet", rollNumber: 7, marks: 55 },
-];
+// let students = [
+//   { name: "Piyush", rollNumber: 31, marks: 80 },
+//   { name: "Jenny", rollNumber: 15, marks: 69 },
+//   { name: "Kaushal", rollNumber: 16, marks: 35 },
+//   { name: "Dilpreet", rollNumber: 7, marks: 55 },
+// ];
 
 // const details = students.filter((stu)=> stu.marks > 60 && stu.rollNumber > 15);
 // const sumMarks = students.reduce((acc, curr)=> acc + curr.marks, 0);
@@ -122,10 +122,20 @@ let students = [
 // Question 6 - Return total marks for students with marks greater than 60
 // after 20 marks have been added to those who scored less than 60
 
-const sumMarks = students.map(stu => {
-  if(stu.marks < 60){
-    stu.marks += 20;
-  }
-  return stu;
-}).filter(stu=>stu.marks > 60).reduce((acc, curr)=> acc+curr.marks, 0);
-console.log(sumMarks);
+// const sumMarks = students.map(stu => {
+//   if(stu.marks < 60){
+//     stu.marks += 20;
+//   }
+//   return stu;
+// }).filter(stu=>stu.marks > 60).reduce((acc, curr)=> acc+curr.marks, 0);
+// console.log(sumMarks);
+
+
+// for(var i=0;i<5;i++){
+//   setTimeout(function (){
+//     console.log('var=>', i);
+//   }, i*1000)
+// }
+// for(let j=0;j<5;j++){
+//   console.log('let=>', j);
+// }
